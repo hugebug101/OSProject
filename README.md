@@ -333,46 +333,19 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5970.7 avail Mem
 Linux codespaces-a8decf 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-11. What is the available free memory in the system. ***(1 mark)*** 
-```bash
-@hugebug101 ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
-```bash
-@hugebug101 ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
+11. What is the available free memory in the system. ***(1 mark)*** 473.1 MiB 
 
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
-```bash
-@hugebug101 ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 17.5 GB
 
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
-```bash
-@hugebug101 ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** The Linux virtual environment is running the Ubuntu operating system with version 22.04.1. The hardware architecture is x86_64
 
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
-```bash
-@hugebug101 ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** The ***ls*** command is used to list files and directories in a directory. On the other hand, ***ls -asl*** provides a more detailed listing with additional information.
 
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
-```bash
-@hugebug101 ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 2560 4K pages
 
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
-```bash
-@hugebug101 ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 3166.647 Mhz
+
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** Node.js
 
 
 ## Running your own container instance.
