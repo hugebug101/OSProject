@@ -55,9 +55,14 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** Linux.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 8GB ram, 32GB and 2 cores.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** Committing and syncing in source control ensures version history, mistake recovery, collaboration, and organized development in coding projects.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+Linux.
+
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+8GB ram, 32GB and 2 cores.
+
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
+Committing and syncing in source control ensures version history, mistake recovery, collaboration, and organized development in coding projects.
 
 ## Exploring the Terminal
 
@@ -123,7 +128,6 @@ shm                65536        8     65528   1% /dev/shm
 
 4. Run the command **du** . ***(1 mark)*** 
 ```bash
-@hugebug101 ➜ /workspaces/OSProject (main) $ df
 @hugebug101 ➜ /workspaces/OSProject (main) $ du
 64      ./.git/hooks
 4       ./.git/branches
@@ -333,19 +337,26 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5970.7 avail Mem
 Linux codespaces-a8decf 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-11. What is the available free memory in the system. ***(1 mark)*** 473.1 MiB 
+11. What is the available free memory in the system. ***(1 mark)*** 
+473.1 MiB 
 
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** 17.5 GB
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
+17.5 GB
 
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** The Linux virtual environment is running the Ubuntu operating system with version 22.04.1. The hardware architecture is x86_64
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
+The Linux virtual environment is running the Ubuntu operating system with version 22.04.1. The hardware architecture is x86_64
 
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** The ***ls*** command is used to list files and directories in a directory. On the other hand, ***ls -asl*** provides a more detailed listing with additional information.
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+The ***ls*** command is used to list files and directories in a directory. On the other hand, ***ls -asl*** provides a more detailed listing with additional information.
 
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 2560 4K pages
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+2560 4K pages
 
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 3166.647 Mhz
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+3166.647 Mhz
 
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** Node.js
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+Node.js
 
 
 ## Running your own container instance.
@@ -406,8 +417,11 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** 
+No, files in a container aren't saved when the container stops or is deleted. Containers are meant to be lightweight and temporary.
+
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
+Yes, we can run many Debian Linux containers. Each acts like a separate computer with its own space and settings.
 
 ## Running your own container with persistent storage
 
@@ -426,14 +440,19 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)
+```bash
+@hugebug101 ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
+total 0
+```
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+This command ensures that both the user (codespace) and the group (codespace) have ownership of all files and directories within myroot. As a result, the codespace user now has the necessary permissions to manage and commit changes to the files.
 
 ## You are on your own, create your own static webpage
 
